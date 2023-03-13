@@ -20,6 +20,6 @@ jobs:
         aws-region: us-east-1
       
     - name: ssm connection
-      run: aws ssm send-command --document-name “AWS-RunShellScript” --instance-ids "i-06068cded98f015a7" --parameters '{“sourceType”:[“GitHub"],"sourceInfo":["{\"owner\":\"Jainsi1\", \"repository\":\"ssm\", \"path\":\"test.sh"}"],"commandLine":["./test.sh"]}'
+      run: aws ssm send-command --document-name “AWS-RunRemoteScript” --instance-ids "i-06068cded98f015a7" --parameters '{“sourceType”:[“GitHub"],"sourceInfo":["{\"owner\":\"Jainsi1\", \"repository\":\"ssm\", \"path\":\"test.sh"}"],"commandLine":["./test.sh"]}'
     
     
