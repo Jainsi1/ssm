@@ -20,6 +20,6 @@ jobs:
         aws-region: us-east-1
       
     - name: ssm connection
-      run: aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids "i-08396c85202039cb0" --parameters commands="mkdir test" 
+      run: aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids "i-08396c85202039cb0" --parameters commands="mkdir vhgj" 
     
     
