@@ -20,5 +20,5 @@ jobs:
         aws-region: us-east-1
       
     - name: ssm connection
-      run: aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids "i-0161cb4d1ea84157e" --parameters commands="touch jd.txt" --cloud-watch-output-config "CloudWatchOutputEnabled=true,CloudWatchLogGroupName=test"   
+      run: aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids "i-0161cb4d1ea84157e" --parameters commands="touch jd.txt"   
     
